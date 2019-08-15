@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Music-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BTRWorld" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="music" customModule="BTRWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,6 +49,23 @@
                                     <segue destination="Xwh-Rz-CJO" kind="show" id="jCW-Au-bUb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1q-PV-d1d">
+                                <rect key="frame" x="184" y="775" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="music:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pCL-na-5HE"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3nQ-VX-S3r">
+                                <rect key="frame" x="87" y="363" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" red="0.96912639932401912" green="0.97370037718845581" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -145,7 +162,7 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1PY-Lm-mie">
                                 <rect key="frame" x="40" y="229" width="334" height="430"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.68445926904678345" green="0.17481479048728943" blue="0.14015722274780273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="430" id="UXC-9Y-b92"/>
                                 </constraints>
@@ -154,6 +171,7 @@ It was organized and created at the Kode With Klossy 2019 Detroit Camp.
 The app is just for fun and has no official relation or partnership with the band Big Time or their respective members or management.
 We do not own Big Time Rush or their images.
 </string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -401,7 +419,7 @@ We do not own Big Time Rush or their images.
                                     <constraint firstAttribute="height" constant="316" id="ZEc-z0-Nhm"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="*BAM* *CRASH* *BOOM*" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2D-m6-g2V">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="*BAM* *CRASH* *BOOM*" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="h2D-m6-g2V">
                                 <rect key="frame" x="20" y="575" width="374" height="134"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -453,7 +471,7 @@ We do not own Big Time Rush or their images.
                                     <constraint firstAttribute="height" constant="316" id="AGT-jS-0m4"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What was that?!?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tN9-Q5-Ayf">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="What was that?!?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tN9-Q5-Ayf">
                                 <rect key="frame" x="20" y="575" width="374" height="134"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -502,7 +520,7 @@ We do not own Big Time Rush or their images.
                                     <constraint firstAttribute="height" constant="316" id="dO8-DN-dTj"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="It sounds like it came from the pool area. I should go check in, but I kind of want to go investigate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jiR-Q3-Qic">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="It sounds like it came from the pool area. You should go check in, but you also kind of want to go investigate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jiR-Q3-Qic">
                                 <rect key="frame" x="20" y="575" width="374" height="134"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -616,19 +634,45 @@ We do not own Big Time Rush or their images.
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tropicalPath" translatesAutoresizingMaskIntoConstraints="NO" id="NNr-hc-SQB">
-                                <rect key="frame" x="-15" y="164" width="444" height="1334"/>
+                                <rect key="frame" x="20" y="126" width="374" height="466"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="466" id="e43-FT-Tu3"/>
+                                </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="You walk towards the pool. The sound of booming music and people talking gets louder as you approach." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oKo-aW-xfY">
+                                <rect key="frame" x="20" y="575" width="374" height="134"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="bP8-EL-YTo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="NNr-hc-SQB" firstAttribute="top" secondItem="Iei-HP-gXD" secondAttribute="top" constant="120" id="Qmp-1Z-eca"/>
-                            <constraint firstItem="NNr-hc-SQB" firstAttribute="leading" secondItem="YHk-Sc-35b" secondAttribute="leading" constant="-15" id="kSd-6P-6Eu"/>
-                            <constraint firstAttribute="trailing" secondItem="NNr-hc-SQB" secondAttribute="trailing" constant="-15" id="xmn-kt-aG6"/>
+                            <constraint firstItem="oKo-aW-xfY" firstAttribute="top" secondItem="NNr-hc-SQB" secondAttribute="bottom" constant="-17" id="3Vj-ef-jV4"/>
+                            <constraint firstItem="oKo-aW-xfY" firstAttribute="leading" secondItem="Iei-HP-gXD" secondAttribute="leading" constant="20" id="5Z6-6M-ybg"/>
+                            <constraint firstItem="Iei-HP-gXD" firstAttribute="trailing" secondItem="NNr-hc-SQB" secondAttribute="trailing" constant="20" id="JzD-15-u4h"/>
+                            <constraint firstItem="NNr-hc-SQB" firstAttribute="leading" secondItem="Iei-HP-gXD" secondAttribute="leading" constant="20" id="SGN-dM-cIZ"/>
+                            <constraint firstItem="NNr-hc-SQB" firstAttribute="leading" secondItem="Iei-HP-gXD" secondAttribute="leading" constant="20" id="ZaX-Pb-TMc"/>
+                            <constraint firstItem="Iei-HP-gXD" firstAttribute="trailing" secondItem="oKo-aW-xfY" secondAttribute="trailing" constant="20" id="bPJ-ns-Tdv"/>
+                            <constraint firstItem="NNr-hc-SQB" firstAttribute="top" secondItem="Iei-HP-gXD" secondAttribute="top" constant="82" id="ozJ-YK-Ca0"/>
+                            <constraint firstItem="Iei-HP-gXD" firstAttribute="trailing" secondItem="NNr-hc-SQB" secondAttribute="trailing" constant="20" id="teb-PF-F0g"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Iei-HP-gXD"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="cnn-NH-v3V" appends="YES" id="IES-dd-Adx"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxx-yz-tAS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cnn-NH-v3V">
+                    <connections>
+                        <segue destination="Apa-zu-b8t" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="LLl-hi-AcP"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="7115.9420289855079" y="-1822.0982142857142"/>
         </scene>
@@ -639,13 +683,33 @@ We do not own Big Time Rush or their images.
                     <view key="view" contentMode="scaleToFill" id="Vwv-ki-IBm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="&quot;dialogue&quot;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2wF-Ij-MlW">
+                                <rect key="frame" x="20" y="575" width="374" height="134"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="iXu-zX-aVM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="2wF-Ij-MlW" firstAttribute="leading" secondItem="7jP-Mg-HTo" secondAttribute="leading" constant="20" id="lcC-j9-rLT"/>
+                            <constraint firstItem="7jP-Mg-HTo" firstAttribute="trailing" secondItem="2wF-Ij-MlW" secondAttribute="trailing" constant="20" id="mQc-uh-ajp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7jP-Mg-HTo"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ttN-17-dSG" appends="YES" id="EX5-Gk-NFE"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eO4-Wg-Vc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ttN-17-dSG"/>
             </objects>
-            <point key="canvasLocation" x="7832" y="-1822"/>
+            <point key="canvasLocation" x="7831.884057971015" y="-1822.0982142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="572-wa-2Ng">
@@ -654,13 +718,45 @@ We do not own Big Time Rush or their images.
                     <view key="view" contentMode="scaleToFill" id="LFe-iF-PHM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2019-08-15 at 10.36.56 AM" translatesAutoresizingMaskIntoConstraints="NO" id="AqB-Ra-aJC">
+                                <rect key="frame" x="20" y="164" width="374" height="364"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="364" id="pmY-kG-fZ3"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="087-kD-HrR">
+                                <rect key="frame" x="20" y="575" width="374" height="229"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">You walk into the lobby. It's full of people laughing and talking, scripts and music sheets in hand. It's so exciting to be around people with the same dreams as you!</string>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="087-kD-HrR" firstAttribute="leading" secondItem="2WW-BP-7zr" secondAttribute="leading" constant="20" id="Gxh-AI-Iuv"/>
+                            <constraint firstItem="AqB-Ra-aJC" firstAttribute="top" secondItem="2WW-BP-7zr" secondAttribute="top" constant="120" id="OQg-EW-tAv"/>
+                            <constraint firstItem="AqB-Ra-aJC" firstAttribute="leading" secondItem="2WW-BP-7zr" secondAttribute="leading" constant="20" id="Tfa-hH-Wl7"/>
+                            <constraint firstItem="087-kD-HrR" firstAttribute="top" secondItem="AqB-Ra-aJC" secondAttribute="bottom" constant="47" id="Ve1-9i-fgU"/>
+                            <constraint firstItem="2WW-BP-7zr" firstAttribute="trailing" secondItem="AqB-Ra-aJC" secondAttribute="trailing" constant="20" id="nW4-BS-gH3"/>
+                            <constraint firstItem="2WW-BP-7zr" firstAttribute="trailing" secondItem="087-kD-HrR" secondAttribute="trailing" constant="20" id="rYb-BB-H0O"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2WW-BP-7zr"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5Ty-a1-5Uf" appends="YES" id="yhl-Gs-jo3"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pFD-Se-I0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5Ty-a1-5Uf">
+                    <connections>
+                        <segue destination="grB-cn-3Vf" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Moi-cN-mXg"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="7116" y="-1159"/>
+            <point key="canvasLocation" x="7115.9420289855079" y="-1159.1517857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FBa-4k-EqQ">
@@ -669,17 +765,29 @@ We do not own Big Time Rush or their images.
                     <view key="view" contentMode="scaleToFill" id="t1K-7P-e2t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RHr-Be-4vU">
+                                <rect key="frame" x="87" y="278" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="vjg-rk-akc"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="9gG-xI-eDq" appends="YES" id="Sx9-y3-sXn"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T84-eX-lV3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9gG-xI-eDq"/>
             </objects>
             <point key="canvasLocation" x="7832" y="-1159"/>
         </scene>
     </scenes>
     <resources>
         <image name="Chrome-red-painted-swatch-203-FB" width="1200" height="628"/>
+        <image name="Screen Shot 2019-08-15 at 10.36.56 AM" width="1439" height="815"/>
         <image name="dogPhoto" width="490" height="275"/>
         <image name="thePalmWoods" width="1024" height="768"/>
         <image name="tropicalPath" width="1000" height="1334"/>
