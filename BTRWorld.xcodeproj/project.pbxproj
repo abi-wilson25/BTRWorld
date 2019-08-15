@@ -16,6 +16,9 @@
 		185F810F2304B41A006D5006 /* BTRWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F810E2304B41A006D5006 /* BTRWorldTests.swift */; };
 		185F811A2304B41A006D5006 /* BTRWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F81192304B41A006D5006 /* BTRWorldUITests.swift */; };
 		18E97BB1230497DF005910D8 /* SecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E97BB0230497DF005910D8 /* SecondPageViewController.swift */; };
+		18E97BB323059B5F005910D8 /* FirstChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E97BB223059B5F005910D8 /* FirstChoiceViewController.swift */; };
+		18E97BB52305A509005910D8 /* CrasshhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E97BB42305A509005910D8 /* CrasshhViewController.swift */; };
+		18E97BB72305A546005910D8 /* PalmWoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E97BB62305A546005910D8 /* PalmWoodsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		185F81192304B41A006D5006 /* BTRWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTRWorldUITests.swift; sourceTree = "<group>"; };
 		185F811B2304B41A006D5006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18E97BB0230497DF005910D8 /* SecondPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageViewController.swift; sourceTree = "<group>"; };
+		18E97BB223059B5F005910D8 /* FirstChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChoiceViewController.swift; sourceTree = "<group>"; };
+		18E97BB42305A509005910D8 /* CrasshhViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrasshhViewController.swift; sourceTree = "<group>"; };
+		18E97BB62305A546005910D8 /* PalmWoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalmWoodsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		185F80EA2304B417006D5006 = {
 			isa = PBXGroup;
 			children = (
+				18E97BB42305A509005910D8 /* CrasshhViewController.swift */,
 				185F80F52304B417006D5006 /* BTRWorld */,
 				185F810D2304B41A006D5006 /* BTRWorldTests */,
 				185F81182304B41A006D5006 /* BTRWorldUITests */,
@@ -104,6 +111,8 @@
 				185F80F62304B417006D5006 /* AppDelegate.swift */,
 				185F80F82304B417006D5006 /* ViewController.swift */,
 				185F80FA2304B417006D5006 /* Main.storyboard */,
+				18E97BB62305A546005910D8 /* PalmWoodsViewController.swift */,
+				18E97BB223059B5F005910D8 /* FirstChoiceViewController.swift */,
 				18E97BB0230497DF005910D8 /* SecondPageViewController.swift */,
 				185F81002304B41A006D5006 /* Assets.xcassets */,
 				185F81022304B41A006D5006 /* LaunchScreen.storyboard */,
@@ -263,9 +272,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				185F80FF2304B417006D5006 /* BTRWorld.xcdatamodeld in Sources */,
+				18E97BB72305A546005910D8 /* PalmWoodsViewController.swift in Sources */,
+				18E97BB323059B5F005910D8 /* FirstChoiceViewController.swift in Sources */,
 				18E97BB1230497DF005910D8 /* SecondPageViewController.swift in Sources */,
 				185F80F92304B417006D5006 /* ViewController.swift in Sources */,
 				185F80F72304B417006D5006 /* AppDelegate.swift in Sources */,
+				18E97BB52305A509005910D8 /* CrasshhViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3NN65N6WW;
 				INFOPLIST_FILE = BTRWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -458,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3NN65N6WW;
 				INFOPLIST_FILE = BTRWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
