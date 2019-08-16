@@ -11,7 +11,8 @@
 		1854B4092305DE3C00E3B860 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1854B4082305DE3C00E3B860 /* AudioToolbox.framework */; };
 		1854B40D2305E0D600E3B860 /* Boyfriend.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1854B40C2305E0D600E3B860 /* Boyfriend.mp3 */; };
 		1854B40F2305E68100E3B860 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1854B40E2305E68100E3B860 /* AVFoundation.framework */; };
-		1854B4132305F9A000E3B860 /* AVAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854B4122305F9A000E3B860 /* AVAudioPlayer.swift */; };
+		1854B4152306F97000E3B860 /* PalmWoodsControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854B4142306F97000E3B860 /* PalmWoodsControllerViewController.swift */; };
+		1854B4192306FA0200E3B860 /* AVAudioSessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854B4182306FA0200E3B860 /* AVAudioSessionsViewController.swift */; };
 		185F80F72304B417006D5006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F80F62304B417006D5006 /* AppDelegate.swift */; };
 		185F80F92304B417006D5006 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F80F82304B417006D5006 /* ViewController.swift */; };
 		185F80FC2304B417006D5006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185F80FA2304B417006D5006 /* Main.storyboard */; };
@@ -23,7 +24,6 @@
 		18E97BB1230497DF005910D8 /* SecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E97BB0230497DF005910D8 /* SecondPageViewController.swift */; };
 		18E97BB323059B5F005910D8 /* FirstChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E97BB223059B5F005910D8 /* FirstChoiceViewController.swift */; };
 		18E97BB52305A509005910D8 /* CrasshhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E97BB42305A509005910D8 /* CrasshhViewController.swift */; };
-		18E97BB72305A546005910D8 /* PalmWoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E97BB62305A546005910D8 /* PalmWoodsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,8 @@
 		1854B4082305DE3C00E3B860 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1854B40C2305E0D600E3B860 /* Boyfriend.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Boyfriend.mp3; sourceTree = "<group>"; };
 		1854B40E2305E68100E3B860 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		1854B4122305F9A000E3B860 /* AVAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAudioPlayer.swift; sourceTree = "<group>"; };
+		1854B4142306F97000E3B860 /* PalmWoodsControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalmWoodsControllerViewController.swift; sourceTree = "<group>"; };
+		1854B4182306FA0200E3B860 /* AVAudioSessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAudioSessionsViewController.swift; sourceTree = "<group>"; };
 		185F80F32304B417006D5006 /* BTRWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTRWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185F80F62304B417006D5006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		185F80F82304B417006D5006 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		18E97BB0230497DF005910D8 /* SecondPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageViewController.swift; sourceTree = "<group>"; };
 		18E97BB223059B5F005910D8 /* FirstChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChoiceViewController.swift; sourceTree = "<group>"; };
 		18E97BB42305A509005910D8 /* CrasshhViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrasshhViewController.swift; sourceTree = "<group>"; };
-		18E97BB62305A546005910D8 /* PalmWoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalmWoodsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +109,6 @@
 		185F80EA2304B417006D5006 = {
 			isa = PBXGroup;
 			children = (
-				1854B4122305F9A000E3B860 /* AVAudioPlayer.swift */,
-				18E97BB42305A509005910D8 /* CrasshhViewController.swift */,
 				185F80F52304B417006D5006 /* BTRWorld */,
 				185F810D2304B41A006D5006 /* BTRWorldTests */,
 				185F81182304B41A006D5006 /* BTRWorldUITests */,
@@ -133,11 +131,11 @@
 			isa = PBXGroup;
 			children = (
 				1854B4062305DE3C00E3B860 /* BTRWorld.entitlements */,
+				18E97BB42305A509005910D8 /* CrasshhViewController.swift */,
 				185F80F62304B417006D5006 /* AppDelegate.swift */,
 				185F80F82304B417006D5006 /* ViewController.swift */,
 				185F80FA2304B417006D5006 /* Main.storyboard */,
 				1854B4042305DC4400E3B860 /* music.swift */,
-				18E97BB62305A546005910D8 /* PalmWoodsViewController.swift */,
 				18E97BB223059B5F005910D8 /* FirstChoiceViewController.swift */,
 				18E97BB0230497DF005910D8 /* SecondPageViewController.swift */,
 				1854B40C2305E0D600E3B860 /* Boyfriend.mp3 */,
@@ -145,6 +143,8 @@
 				185F81022304B41A006D5006 /* LaunchScreen.storyboard */,
 				185F81052304B41A006D5006 /* Info.plist */,
 				185F80FD2304B417006D5006 /* BTRWorld.xcdatamodeld */,
+				1854B4142306F97000E3B860 /* PalmWoodsControllerViewController.swift */,
+				1854B4182306FA0200E3B860 /* AVAudioSessionsViewController.swift */,
 			);
 			path = BTRWorld;
 			sourceTree = "<group>";
@@ -237,7 +237,7 @@
 						CreatedOnToolsVersion = 10.2.1;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 0;
+								enabled = 1;
 							};
 							com.apple.InterAppAudio = {
 								enabled = 1;
@@ -308,12 +308,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				185F80FF2304B417006D5006 /* BTRWorld.xcdatamodeld in Sources */,
-				18E97BB72305A546005910D8 /* PalmWoodsViewController.swift in Sources */,
 				18E97BB323059B5F005910D8 /* FirstChoiceViewController.swift in Sources */,
-				1854B4132305F9A000E3B860 /* AVAudioPlayer.swift in Sources */,
+				1854B4152306F97000E3B860 /* PalmWoodsControllerViewController.swift in Sources */,
 				18E97BB1230497DF005910D8 /* SecondPageViewController.swift in Sources */,
 				185F80F92304B417006D5006 /* ViewController.swift in Sources */,
 				185F80F72304B417006D5006 /* AppDelegate.swift in Sources */,
+				1854B4192306FA0200E3B860 /* AVAudioSessionsViewController.swift in Sources */,
 				18E97BB52305A509005910D8 /* CrasshhViewController.swift in Sources */,
 				1854B4052305DC4400E3B860 /* music.swift in Sources */,
 			);

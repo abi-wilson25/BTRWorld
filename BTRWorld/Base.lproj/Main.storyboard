@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Music-->
+        <!--Audio Sessions View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="music" customModule="BTRWorld" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AVAudioSessionsViewController" customModule="BTRWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,18 +54,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="music:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pCL-na-5HE"/>
+                                    <action selector="audioButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7yg-wX-yiB"/>
+                                    <action selector="playMusic:" destination="xYF-Bz-Oau" eventType="touchUpInside" id="Eg3-ch-31A"/>
                                 </connections>
                             </button>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3nQ-VX-S3r">
-                                <rect key="frame" x="87" y="363" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" red="0.96912639932401912" green="0.97370037718845581" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -83,6 +75,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="xYF-Bz-Oau" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
         </scene>
@@ -597,7 +590,7 @@ We do not own Big Time Rush or their images.
                                 </state>
                                 <connections>
                                     <action selector="firsChoiceAlert:" destination="S8X-Ze-t2U" eventType="touchUpInside" id="9H3-a0-A1e"/>
-                                    <segue destination="vUi-b6-QZd" kind="presentation" id="Kn7-GW-aUD"/>
+                                    <segue destination="vUi-b6-QZd" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="GXQ-4b-EOS"/>
                                 </connections>
                             </button>
                         </subviews>

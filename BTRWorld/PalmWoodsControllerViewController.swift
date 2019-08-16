@@ -1,23 +1,20 @@
 //
-//  PalmWoodsViewController.swift
+//  PalmWoodsControllerViewController.swift
 //  BTRWorld
 //
-//  Created by Apple on 8/15/19.
+//  Created by Apple on 8/16/19.
 //  Copyright © 2019 Apple. All rights reserved.
 //
 
 import UIKit
 
-class PalmWoodsViewController: UIViewController {
+class PalmWoodsControllerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
- 
-    
     
 
     /*

@@ -9,29 +9,26 @@
 
 import UIKit
 import AVFoundation
-class music: UIViewController{
-    class AVAudioPlayer : NSObject {
-  //  var audioPlayer = AVAudioPlayer()
-        var dog = true
-        let path = Bundle.main.path(forResource: "Boyfriend.mp3", ofType: "mp3")!
-        var one = 1
-@IBAction func music(_ sender: Any) {
-    
-    if one == 1 {
-        let audioPlayer = try! AVAudioPlayer()
-    
-    }
-        
-    else {
-        print("error")
-    }
-    
 
-   
-    }
-    }
+class music: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        //    let path = Bundle.main.path(forResource: "Boyfriend", ofType: "mp3")
+        
+        
+        
+        
+        
     }
 
-}
+
+        
+      
+
+    }
+
+
+
+
